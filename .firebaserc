@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lcea-pps-2022": {
+      "hosting": {
+        "app": [
+          "lcea-tabla-didactica"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lcea-pps-2022"
+  }
+}

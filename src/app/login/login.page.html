@@ -1,0 +1,15 @@
+<ion-content>
+  <form class="text-center">
+    <img src="../../assets/logo_contrast.png" class="Logo m-5">
+    <section class="Container container mt-4 p-4 text-center">
+      <input type="email" class="Input shadow mb-2 py-2 form-control" id="floatingInput" placeholder="Dirección de correo" [(ngModel)]="this.email" name="email">
+      <input type="password" class="Input shadow mb-2 py-2 form-control" id="floatingPassword" placeholder="Contraseña" [(ngModel)]="this.clave" name="clave">
+      
+      <ion-button (click)="llenarCampos('test1@example.com', 'password')" shape="round" expand="block" class="my-3" color="primary">Usar test1</ion-button>
+      <ion-button (click)="llenarCampos('test2@example.com', 'password')" shape="round" expand="block" class="my-3" color="secondary">Usar test2</ion-button>
+      <ion-button (click)="llenarCampos('test3@example.com', 'password')" shape="round" expand="block" class="my-3" color="tertiary">Usar test3</ion-button>
+    </section>
+
+    <ion-button (click)="iniciarSesion()" shape="round" strong="true" size="large" expand="block" color="success" class="Submit mx-4 my-3">Iniciar sesión</ion-button>
+  </form>
+</ion-content>
