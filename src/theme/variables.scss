@@ -3,6 +3,14 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: 'Ubuntu', 'Roboto', Arial, Helvetica, sans-serif;
+
+  --ion-background-color: #3880ff;
+  --ion-background-color-rgb: 56, 128, 255;
+
+  --ion-text-color: #eeeeee;
+  --ion-text-color-rgb: 238,238,238;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -44,8 +52,8 @@
   --ion-color-warning-tint: #ffca22;
 
   /** danger **/
-  --ion-color-danger: #eb445a;
-  --ion-color-danger-rgb: 235, 68, 90;
+  --ion-color-danger: #C6060A;
+  --ion-color-danger-rgb: 198, 6, 10;
   --ion-color-danger-contrast: #ffffff;
   --ion-color-danger-contrast-rgb: 255, 255, 255;
   --ion-color-danger-shade: #cf3c4f;
