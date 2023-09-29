@@ -2,10 +2,15 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'lcea.tabla.didactica',
-  appName: 'tabla-didactica',
+  appName: 'Tabla Didáctica',
   webDir: 'www',
   server: {
     androidScheme: 'https'
+  },
+  plugins: {
+    SplashScreen: {
+      launchAutoHide: false
+    }
   }
 };
 
