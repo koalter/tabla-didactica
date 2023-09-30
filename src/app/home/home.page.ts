@@ -12,15 +12,39 @@ import { TextToSpeech } from '@capacitor-community/text-to-speech';
 export class HomePage {
 
   language: string = 'es-ES';
-  text: string[] = [];
+  text: any[] = [
+    {
+      "es-ES": "rojo",
+      "en-US": "red",
+      "pt-PT": "vermelho"
+    },
+    {
+      "es-ES": "verde",
+      "en-US": "green",
+      "pt-PT": "verde"
+    },
+    {
+      "es-ES": "amarillo",
+      "en-US": "yellow",
+      "pt-PT": "amarelo"
+    },
+    {
+      "es-ES": "blanco",
+      "en-US": "white",
+      "pt-PT": "branco"
+    },
+    {
+      "es-ES": "negro",
+      "en-US": "black",
+      "pt-PT": "preto"
+    },
+  ]
 
   constructor(
     private auth: AuthService,
     private router: Router,
     private loadingController: LoadingController
-  ) {
-    // TextToSpeech.getSupportedLanguages().then(res => this.text = res.languages);
-  }
+  ) {}
 
   async logout() {
     const loadingElement = await this.loadingController
@@ -35,9 +59,9 @@ export class HomePage {
     }
   }
 
-  async play(message: string) {
+  async play(index: number) {
     await TextToSpeech.speak({
-      text: message,
+      text: this.text[index][this.language],
       lang: this.language,
     });
   }

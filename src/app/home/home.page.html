@@ -9,31 +9,30 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- <ion-text>{{text | json}}</ion-text> -->
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <ion-button (click)="play('rojo')" color="danger" expand="block" size="large"></ion-button>
+        <ion-button (click)="play(0)" color="danger" expand="block" size="large"></ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-button (click)="play('verde')" color="success" expand="block" size="large"></ion-button>
+        <ion-button (click)="play(1)" color="success" expand="block" size="large"></ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-button (click)="play('amarillo')" color="warning" expand="block" size="large"></ion-button>
+        <ion-button (click)="play(2)" color="warning" expand="block" size="large"></ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-button (click)="play('blanco')" color="light" expand="block" size="large"></ion-button>
+        <ion-button (click)="play(3)" color="light" expand="block" size="large"></ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-button (click)="play('negro')" color="dark" expand="block" size="large"></ion-button>
+        <ion-button (click)="play(4)" color="dark" expand="block" size="large"></ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
