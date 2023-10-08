@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button (click)="logout()" size="large">
@@ -8,69 +8,43 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12">
-        <ion-button (click)="play(0)" color="danger" expand="block" size="large"></ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-button (click)="play(1)" color="success" expand="block" size="large"></ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-button (click)="play(2)" color="warning" expand="block" size="large"></ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-button (click)="play(3)" color="light" expand="block" size="large"></ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12">
-        <ion-button (click)="play(4)" color="dark" expand="block" size="large"></ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button color="success">
-      <ion-icon name="language-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="language = 'es-ES'">
-        <img src="../../assets/icon/es.png" alt="English">
-      </ion-fab-button>
-      <ion-fab-button (click)="language = 'en-US'">
-        <img src="../../assets/icon/en.png" alt="English">
-      </ion-fab-button>
-      <ion-fab-button (click)="language = 'pt-PT'">
-        <img src="../../assets/icon/pt.png" alt="English">
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
-  <ion-fab slot="fixed" vertical="bottom" horizontal="start">
-    <ion-fab-button color="warning">
-      <ion-icon name="grid-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <img src="../../assets/icon/animal.png" alt="English" width="80%">
-      </ion-fab-button>
-      <ion-fab-button>
-        <img src="../../assets/icon/number.png" alt="English" width="80%">
-      </ion-fab-button>
-      <ion-fab-button>
-        <img src="../../assets/icon/colour.png" alt="English" width="80%">
-      </ion-fab-button>
-    </ion-fab-list> 
-  </ion-fab>
+<ion-content>
+  <router-outlet></router-outlet>
 </ion-content>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button color="success">
+    <ion-icon name="language-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button (click)="language.setToSpanish()">
+      <img src="../../assets/icon/es.png" alt="English">
+    </ion-fab-button>
+    <ion-fab-button (click)="language.setToEnglish()">
+      <img src="../../assets/icon/en.png" alt="English">
+    </ion-fab-button>
+    <ion-fab-button (click)="language.setToPortuguese()">
+      <img src="../../assets/icon/pt.png" alt="English">
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="start">
+  <ion-fab-button color="warning">
+    <ion-icon name="grid-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button routerLink="animals">
+      <img src="../../assets/icon/animal.png" alt="animals" width="80%">
+    </ion-fab-button>
+    <ion-fab-button routerLink="numbers">
+      <img src="../../assets/icon/number.png" alt="numbers" width="80%">
+    </ion-fab-button>
+    <ion-fab-button routerLink="colors">
+      <img src="../../assets/icon/colour.png" alt="colors" width="80%">
+    </ion-fab-button>
+  </ion-fab-list> 
+</ion-fab>
 
 <!-- <a href="https://www.freepik.com/icon/flag_10601006#fromView=resource_detail&position=13">Icon by amoghdesign</a> -->
 <!-- <a href="https://www.freepik.com/icon/laughing_2172019#fromView=search&term=dog&page=1&position=40">Icon by AomAm</a> -->
