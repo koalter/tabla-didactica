@@ -19,7 +19,19 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
     canActivate: [AuthGuard],
     data: { authGuardPipe: () => redirectLoggedInTo(['home']) }
+  },  {
+    path: 'colors',
+    loadChildren: () => import('./colors/colors.module').then( m => m.ColorsPageModule)
   },
+  {
+    path: 'numbers',
+    loadChildren: () => import('./numbers/numbers.module').then( m => m.NumbersPageModule)
+  },
+  {
+    path: 'animals',
+    loadChildren: () => import('./animals/animals.module').then( m => m.AnimalsPageModule)
+  },
+
 ];
 
 @NgModule({

@@ -1,0 +1,26 @@
+ion-grid {
+  ion-button {
+    --padding-top: 7vh;
+    --padding-bottom: 7vh;
+  }
+}
+
+#dog {
+  --background: url('../../assets/dog.jpg') no-repeat 0/100%;
+}
+
+#cat {
+  --background: url('../../assets/cat.jpg') no-repeat center 30% / 100%;
+}
+
+#cow {
+  --background: url('../../assets/cow.jpg') no-repeat center 30% / 100%;
+}
+
+#duck {
+  --background: url('../../assets/duck.jpg') no-repeat center 30% / 100%;
+}
+
+#horse {
+  --background: url('../../assets/horse.jpg') no-repeat center 30% / 100%;
+}
