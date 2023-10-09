@@ -15,6 +15,21 @@ export class LoginFormComponent {
     password: ['', Validators.required],
   });
 
+  private testUsers = [
+    {
+      email: "e@e.com",
+      password: "123456"
+    },
+    {
+      email: "a@a.com",
+      password: "123456"
+    },
+    {
+      email: "i@i.com",
+      password: "123456"
+    }
+  ]
+
   get email() {
     return this.form.controls.email;
   }
@@ -45,8 +60,8 @@ export class LoginFormComponent {
     }
   }
 
-  fill() {
-    this.email.setValue('e@e.com');
-    this.password.setValue('123456');
+  fill(index: number) {
+    this.email.setValue(this.testUsers[index].email);
+    this.password.setValue(this.testUsers[index].password);
   }
 }
