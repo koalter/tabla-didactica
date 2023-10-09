@@ -10,6 +10,14 @@ import { LanguageService } from '../services/language.service';
 })
 export class AnimalsPage implements OnInit {
 
+  get width() : number {
+    return window.innerWidth;
+  }
+
+  get height() : number {
+    return window.innerHeight;
+  }
+
   constructor(private language: LanguageService) { }
 
   ngOnInit() {

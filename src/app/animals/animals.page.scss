@@ -24,3 +24,37 @@ ion-grid {
 #horse {
   --background: url('../../assets/horse.jpg') no-repeat center 30% / 100%;
 }
+
+@media (orientation: landscape) {
+  ion-grid, ion-row, ion-button {
+    height: 95%;
+  }
+  
+  ion-grid {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(8%);
+  }
+
+  #dog {
+    --background: url('../../assets/dog.jpg') no-repeat 60% / cover;
+  }
+  
+  #cat {
+    --background: url('../../assets/cat.jpg') no-repeat center 30% / cover;
+  }
+  
+  #cow {
+    --background: url('../../assets/cow.jpg') no-repeat center 30% / cover;
+  }
+  
+  #duck {
+    --background: url('../../assets/duck.jpg') no-repeat 40% 30% / cover;
+  }
+  
+  #horse {
+    --background: url('../../assets/horse.jpg') no-repeat 26% 30% / cover;
+  }
+}

@@ -10,6 +10,14 @@ import { colors } from '../../assets/texts';
 })
 export class ColorsPage implements OnInit {
 
+  get width() : number {
+    return window.innerWidth;
+  }
+
+  get height() : number {
+    return window.innerHeight;
+  }
+
   constructor(private language: LanguageService) { }
 
   ngOnInit() { }
