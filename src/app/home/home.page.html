@@ -14,34 +14,34 @@
 
 <ion-fab slot="fixed" vertical="bottom" horizontal="end">
   <ion-fab-button color="success">
-    <ion-icon name="language-outline"></ion-icon>
+    <img [src]="langSrc">
   </ion-fab-button>
   <ion-fab-list side="top">
-    <ion-fab-button (click)="language.setToSpanish()">
-      <img src="../../assets/icon/es.png" alt="English">
+    <ion-fab-button (click)="setToSpanish()">
+      <img [src]="assets.languages.es" alt="English">
     </ion-fab-button>
-    <ion-fab-button (click)="language.setToEnglish()">
-      <img src="../../assets/icon/en.png" alt="English">
+    <ion-fab-button (click)="setToEnglish()">
+      <img [src]="assets.languages.en" alt="English">
     </ion-fab-button>
-    <ion-fab-button (click)="language.setToPortuguese()">
-      <img src="../../assets/icon/pt.png" alt="English">
+    <ion-fab-button (click)="setToPortuguese()">
+      <img [src]="assets.languages.pt" alt="English">
     </ion-fab-button>
   </ion-fab-list>
 </ion-fab>
 
 <ion-fab slot="fixed" vertical="bottom" horizontal="start">
-  <ion-fab-button color="warning">
-    <ion-icon name="grid-outline"></ion-icon>
+  <ion-fab-button color="medium">
+    <img [src]="themeSrc" width="70%">
   </ion-fab-button>
   <ion-fab-list side="top">
-    <ion-fab-button routerLink="animals">
-      <img src="../../assets/icon/animal.png" alt="animals" width="80%">
+    <ion-fab-button routerLink="animals" (click)="playAnimals()">
+      <img [src]="assets.themes.animal" alt="animals" width="70%">
     </ion-fab-button>
-    <ion-fab-button routerLink="numbers">
-      <img src="../../assets/icon/number.png" alt="numbers" width="80%">
+    <ion-fab-button routerLink="numbers" (click)="playNumbers()">
+      <img [src]="assets.themes.number" alt="numbers" width="70%">
     </ion-fab-button>
-    <ion-fab-button routerLink="colors">
-      <img src="../../assets/icon/colour.png" alt="colors" width="80%">
+    <ion-fab-button routerLink="colors" (click)="playColors()">
+      <img [src]="assets.themes.color" alt="colors" width="70%">
     </ion-fab-button>
   </ion-fab-list> 
 </ion-fab>

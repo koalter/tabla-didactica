@@ -6,28 +6,54 @@ ion-grid {
 }
 
 #dog {
-  --background: url('../../assets/dog.jpg') no-repeat 0/100%;
+  --background: url('../../assets/dog.jpg') no-repeat center 0 / cover;
 }
 
 #cat {
-  --background: url('../../assets/cat.jpg') no-repeat center 30% / 100%;
+  --background: url('../../assets/cat.jpg') no-repeat center 0 / cover;
 }
 
 #cow {
-  --background: url('../../assets/cow.jpg') no-repeat center 30% / 100%;
+  --background: url('../../assets/cow.jpg') no-repeat center 0 / cover;
 }
 
 #duck {
-  --background: url('../../assets/duck.jpg') no-repeat center 30% / 100%;
+  --background: url('../../assets/duck.jpg') no-repeat center 0 / cover;
 }
 
 #horse {
-  --background: url('../../assets/horse.jpg') no-repeat center 30% / 100%;
+  --background: url('../../assets/horse.jpg') no-repeat center 0 / cover;
+}
+
+#turtle {
+  --background: url('../../assets/turtle.jpg') no-repeat center center / cover;
+}
+
+#parrot {
+  --background: url('../../assets/parrot.jpg') no-repeat center 25% / cover;
+}
+
+#elephant {
+  --background: url('../../assets/elephant.jpg') no-repeat center 0 / cover;
+}
+
+#giraffe {
+  --background: url('../../assets/giraffe.jpg') no-repeat center 0 / cover;
+}
+
+#lion {
+  --background: url('../../assets/lion.jpg') no-repeat center 0 / cover;
 }
 
 @media (orientation: landscape) {
-  ion-grid, ion-row, ion-button {
-    height: 95%;
+  ion-grid {
+    height: 80%;
+  }
+  ion-row {
+    height: 50%;
+  }
+  ion-button {
+    height: 100%;
   }
   
   ion-grid {
@@ -56,5 +82,25 @@ ion-grid {
   
   #horse {
     --background: url('../../assets/horse.jpg') no-repeat 26% 30% / cover;
+  }
+
+  #turtle {
+    --background: url('../../assets/turtle.jpg') no-repeat 26% 30% / cover;
+  }
+
+  #parrot {
+    --background: url('../../assets/parrot.jpg') no-repeat 26% 30% / cover;
+  }
+
+  #elephant {
+    --background: url('../../assets/elephant.jpg') no-repeat 26% 30% / cover;
+  }
+
+  #giraffe {
+    --background: url('../../assets/giraffe.jpg') no-repeat 26% 30% / cover;
+  }
+
+  #lion {
+    --background: url('../../assets/lion.jpg') no-repeat 26% 30% / cover;
   }
 }

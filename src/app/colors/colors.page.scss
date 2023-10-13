@@ -5,9 +5,27 @@ ion-grid {
   }
 }
 
+.brown {
+  --background: rgb(126, 81, 30);
+}
+
+.pink {
+  --background: rgb(255, 3, 163);
+}
+
+.purple {
+  --background: purple;
+}
+
 @media (orientation: landscape) {
-  ion-grid, ion-row, ion-button {
-    height: 95%;
+  ion-grid {
+    height: 80%;
+  }
+  ion-row {
+    height: 50%;
+  }
+  ion-button {
+    height: 100%;
   }
   
   ion-grid {
