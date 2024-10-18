@@ -14,16 +14,16 @@
 
 <ion-fab slot="fixed" vertical="bottom" horizontal="end">
   <ion-fab-button color="success">
-    <ion-icon name="language-outline"></ion-icon>
+    <img [src]="selectedLanguageSrc" width="80%">
   </ion-fab-button>
   <ion-fab-list side="top">
-    <ion-fab-button (click)="language.setToSpanish()">
+    <ion-fab-button (click)="setToSpanish()">
       <img src="../../assets/icon/es.png" alt="English">
     </ion-fab-button>
-    <ion-fab-button (click)="language.setToEnglish()">
+    <ion-fab-button (click)="setToEnglish()">
       <img src="../../assets/icon/en.png" alt="English">
     </ion-fab-button>
-    <ion-fab-button (click)="language.setToPortuguese()">
+    <ion-fab-button (click)="setToPortuguese()">
       <img src="../../assets/icon/pt.png" alt="English">
     </ion-fab-button>
   </ion-fab-list>
@@ -31,16 +31,16 @@
 
 <ion-fab slot="fixed" vertical="bottom" horizontal="start">
   <ion-fab-button color="warning">
-    <ion-icon name="grid-outline"></ion-icon>
+    <img [src]="selectedThemeSrc" width="80%">
   </ion-fab-button>
   <ion-fab-list side="top">
-    <ion-fab-button routerLink="animals">
+    <ion-fab-button routerLink="animals" (click)="setThemeSrc('../../assets/icon/animal.png')">
       <img src="../../assets/icon/animal.png" alt="animals" width="80%">
     </ion-fab-button>
-    <ion-fab-button routerLink="numbers">
+    <ion-fab-button routerLink="numbers" (click)="setThemeSrc('../../assets/icon/number.png')">
       <img src="../../assets/icon/number.png" alt="numbers" width="80%">
     </ion-fab-button>
-    <ion-fab-button routerLink="colors">
+    <ion-fab-button routerLink="colors" (click)="setThemeSrc('../../assets/icon/colour.png')">
       <img src="../../assets/icon/colour.png" alt="colors" width="80%">
     </ion-fab-button>
   </ion-fab-list> 

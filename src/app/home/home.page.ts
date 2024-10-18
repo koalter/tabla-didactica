@@ -11,6 +11,9 @@ import { LanguageService } from '../services/language.service';
 })
 export class HomePage {
 
+  selectedLanguageSrc: string = '../../assets/icon/es.png';
+  selectedThemeSrc: string = '../../assets/icon/colour.png';
+
   constructor(
     private auth: AuthService,
     private router: Router,
@@ -29,5 +32,24 @@ export class HomePage {
     if (result) {
       this.router.navigate(['login']);
     }
+  }
+
+  setThemeSrc(path: string) {
+    this.selectedThemeSrc = path;
+  }
+
+  setToSpanish() {
+    this.language.setToSpanish();
+    this.selectedLanguageSrc = '../../assets/icon/es.png';
+  }
+
+  setToEnglish() {
+    this.language.setToEnglish();
+    this.selectedLanguageSrc = '../../assets/icon/en.png';
+  }
+
+  setToPortuguese() {
+    this.language.setToPortuguese();
+    this.selectedLanguageSrc = '../../assets/icon/pt.png';
   }
 }
